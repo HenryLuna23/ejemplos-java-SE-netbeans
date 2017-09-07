@@ -1,4 +1,5 @@
 package Clase6;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class EjercicioPropuesto {
         final double claseB = 8.50;
         final double claseC = 10.00;
         final double claseD = 12.50;
+        final double claseE = 15.99;
         Scanner leer = new Scanner(System.in);
         DecimalFormat formato = new DecimalFormat("$ ####.00");
         char categoria;
@@ -40,6 +42,10 @@ public class EjercicioPropuesto {
                 case 'd':
                 case 'D':
                     System.out.println("El sueldo del empleado es: " + formato.format(horas * 4 * claseD));
+                    break;
+                case 'e':
+                case 'E':
+                    System.out.println("El sueldo del empleado es: " + formato.format(horas * 4 * claseE));
                     break;
                 default:
                     System.out.println("¡Ha seleccionado una categoría que no existe!");
